@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shadow</title>
+    <style>
+      .box {
+        width: 200px;
+        height: 200px;
+        background-color: blueviolet;
+        color: #fff;
+        margin: 50px auto;
+        border-radius: 10px;
+      }
+      .box1 {
+        /* x y blur color */
+        box-shadow: 10px 10px 10px #000, -10px -10px 10px red;
+      }
+      .box2 {
+        border: 1px solid blueviolet;
+        box-shadow: inset 10px 10px 10px #fff, inset -10px -10px 10px #fff,
+          10px 10px 10px #1c0909, 20px 20px 10px #c10909;
+      }
+      h1{
+        text-shadow: 2px 4px 2px red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box box1">Box</div>
+    <div class="box box2"></div>
+    <h1>Heading 1</h1>
+  </body>
+</html>

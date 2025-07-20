@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Selectors</title>
+    <style>
+      /* universal */
+      * {
+        color: rgb(156, 224, 45);
+      }
+
+      /* type selector(element name) */
+      h2 {
+        background-color: blueviolet;
+      }
+
+      /* id */
+      #para1 {
+        background-color: pink;
+      }
+
+      /* class */
+      .custom-styles {
+        color: white;
+      }
+      .center {
+        text-align: center;
+      }
+
+      /* attribute */
+      input[type="email"] {
+        background-color: yellow;
+      }
+      a[target]{
+        background-color: rgb(212, 255, 0);
+      }
+    </style>
+  </head>
+  <body>
+    <h2 class="custom-styles center">Heading 2</h2>
+    <p class="custom-styles" id="para1">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere minima
+      porro quos fugiat! Harum velit quam fugit officia, aliquid saepe nesciunt,
+      corporis praesentium nobis cum quod commodi repudiandae, tempore nostrum?
+    </p>
+    <h3 class="center">Heading 3</h3>
+
+    <input type="text" />
+    <input type="email" />
+    <input type="password" />
+    <br />
+    <a href="" target="_blank">Link 1</a>
+    <a href="">Link 2</a>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Sizing</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: hotpink;
+            margin-bottom: 1rem;
+        }
+        .box-2{
+            /* padding: 1rem; */
+            box-sizing: border-box;
+            border: 1rem solid red;
+        }
+    </style>
+</head>
+<body>
+    <!-- .box*2 -->
+   <div class="box box-1">Box 1</div>
+   <div class="box box-2">Box 2</div>
+</body>
+</html>
