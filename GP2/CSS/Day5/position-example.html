@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        background-color: palegreen;
+        padding: 2rem;
+      }
+      .container h1 {
+        position: relative;
+        padding-left: 1rem;
+      }
+      .container h1::before {
+        content: "";
+        width: 4px;
+        height: 50px;
+        background-color: green;
+        position: absolute;
+        inset: 0;
+        margin: auto 8px;
+        /* border-radius: 50%; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Heading 1</h1>
+    </div>
+  </body>
+</html>
