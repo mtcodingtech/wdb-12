@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Line 2</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        max-width: 700px;
+        margin: 50px auto;
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 50px 150px 100px 150px;
+        grid-template-areas:  
+        "header header header"
+        "sidebar one one"
+        "sidebar two three"
+        "footer footer footer";
+      }
+      header,
+      aside,
+      section,
+      footer {
+        background-color: rgb(43, 226, 98);
+        color: #fff;
+      }
+      header {
+        grid-area: header;
+      }
+      aside {
+        grid-area: sidebar;
+      }
+      .content-1 {
+        grid-area: one;
+        display: grid;
+        place-items: center;
+      }
+      .content-2 {
+        grid-area: two;
+      }
+      .content-3 {
+        grid-area: three;
+      }
+      footer {
+        grid-area: footer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>Header</header>
+      <aside>Sidebar</aside>
+      <section class="content-1">Content 1</section>
+      <section class="content-2">Content 2</section>
+      <section class="content-3">Content 3</section>
+      <footer>Footer</footer>
+    </div>
+  </body>
+</html>

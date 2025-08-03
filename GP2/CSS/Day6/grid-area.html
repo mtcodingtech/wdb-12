@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Area</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        max-width: 700px;
+        margin: 50px auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: 200px;
+        gap: 1rem;
+        grid-template-areas:  
+        "one one two three"
+        "four five five three";
+      }
+      .container .item {
+        padding: 1rem;
+        color: #fff;
+        border-radius: 10px;
+      }
+      .container .item:nth-child(1) {
+        background-color: blueviolet;
+        grid-area: one;
+      }
+      .container .item:nth-child(2) {
+        background-color: rgb(42, 34, 49);
+        grid-area: two;
+      }
+      .container .item:nth-child(3) {
+        background-color: rgb(43, 226, 73);
+        grid-area: three;
+      }
+      .container .item:nth-child(4) {
+        background-color: rgb(226, 116, 43);
+        grid-area: four;
+      }
+      .container .item:nth-child(5) {
+        background-color: rgb(43, 195, 226);
+        grid-area: five;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+    </div>
+  </body>
+</html>
