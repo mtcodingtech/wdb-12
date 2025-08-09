@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <style>
+      .box {
+        width: 200px;
+        height: 200px;
+        background-color: blueviolet;
+        color: #fff;
+      }
+      .box:hover {
+        animation-name: multiColor;
+        animation-duration: 3s;
+        /* animation-delay: 3s; */
+        animation-iteration-count: 1;
+      }
+
+      @keyframes changeColor {
+        from {
+          background-color: red;
+        }
+        to {
+          background-color: yellow;
+        }
+      }
+      @keyframes multiColor {
+        0% {
+          background-color: green;
+        }
+        50% {
+          background-color: red;
+          transform: translateX(100px);
+        }
+        70% {
+          border-radius: 50%;
+        }
+        100% {
+          background-color: yellow;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">Box</div>
+    <h1 class="animate__animated animate__zoomInUp">An animated element</h1>
+  </body>
+</html>
