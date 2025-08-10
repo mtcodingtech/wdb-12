@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Query</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        max-width: 700px;
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .container .item {
+        background-color: aqua;
+        padding: 1rem;
+      }
+      @media (min-width: 768px) {
+        /* tablet size */
+        .container {
+          grid-template-columns: repeat(3, 1fr);
+        }
+        .container .item {
+          background-color: purple;
+        }
+      }
+      @media (min-width: 992px) {
+        /* desktop */
+        .container {
+          grid-template-columns: repeat(6, 1fr);
+        }
+        .container .item {
+          background-color: rgb(208, 234, 39);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item">item 1</div>
+      <div class="item">item 2</div>
+      <div class="item">item 3</div>
+      <div class="item">item 4</div>
+      <div class="item">item 5</div>
+      <div class="item">item 6</div>
+    </div>
+  </body>
+</html>
