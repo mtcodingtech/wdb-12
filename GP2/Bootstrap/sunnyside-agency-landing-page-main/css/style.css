@@ -28,7 +28,8 @@ h3,
 h4,
 h5,
 h6,
-.custom-link {
+.custom-link,
+.info-link {
   font-family: "Fraunces", serif;
   font-optical-sizing: auto;
   font-weight: 700;
@@ -37,17 +38,41 @@ h6,
 }
 
 .hero-section {
-    min-height: 80vh;
+  min-height: 80vh;
   background-image: url("../images/mobile/image-header.jpg");
   background-size: contain;
   background-position: center;
   @media (min-width: 768px) {
     background-image: url("../images/desktop/image-header.jpg");
+    min-height: 40vh;
+  }
+   @media (min-width: 992px) {
     min-height: 100vh;
   }
   .custom-link {
     button {
       font-size: 0.8rem;
+    }
+  }
+  .main {
+    h1 {
+      letter-spacing: 6px;
+      font-size: clamp(2rem, 3vw, 2.8rem);
+    }
+    img {
+      width: 20px;
+    }
+  }
+}
+
+.info-section {
+  .info-container {
+    max-width: 90%;
+    @media (min-width: 768px) {
+      max-width: 70%;
+    }
+    p {
+      color: var(--Grey-550);
     }
   }
 }
